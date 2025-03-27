@@ -1,30 +1,4 @@
-<!--
-Copyright 2023 Google LLC
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-      http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
-
 # Improving Product Feeds with BigQuery
-
-For [FeedGen](https://github.com/google-marketing-solutions/feedgen)'s core purpose of applying LLM prompts at scale, BigQuery's ML.GENERATE\_TEXT() function is an obvious option: provided that the source feed is available in BigQuery, the generation of titles and descriptions can be done entirely there. [This Guide](./GUIDE.md) describes how to do this, with a focus on one-time generation of titles & descriptions for a given set of products.
-
-⚠️ Note: To match FeedGen's functionality of incorporating product descriptions obtained from [web shops](./parsed_descriptions.md) or [images](./image_descriptions.md), steps outside BigQuery are needed – see those linked pages.
-
-⚠️ This does **not** cover:
-* how to facilitate recurring processing of newly added products,
-* how to extract product attributes (like [FeedGen](../README.md) does),
-* how to use the Product Studio API from BigQuery, or
-* how to build a graphical user interface around this.
 
 ## Performance
 
